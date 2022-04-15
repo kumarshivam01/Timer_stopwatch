@@ -1,0 +1,55 @@
+body{
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg");
+    background-size: cover;
+}
+
+.main{
+    
+    text-align: center;
+}
+.timer{
+    font-size: 300px;
+            font-family: serif;
+            color: transparent;
+            text-align: center;
+            animation: effect 1s linear infinite;
+}
+@keyframes effect {
+    0% {
+        background: linear-gradient(
+                #008000, #043aaf);
+        -webkit-background-clip: text;
+    }
+
+    100% {
+        background: linear-gradient(
+                #c912a1, #b61c1c);
+        -webkit-background-clip: text;
+    }
+}
+.control{
+    display: flex;
+    gap: 25px;
+    /* border: 1px solid black; */
+    width: 525px;
+    margin: auto;
+}
+.control>button{
+    width: 150px;
+    height: 60px;
+    font-size: 30px;
+    font-weight: 700;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+.reset:hover{
+    background-color: red;
+}
+.start:hover{
+    background-color: rgb(0, 73, 24);
+}
+.stop:hover{
+    background-color: rgb(211, 247, 9);
+}
